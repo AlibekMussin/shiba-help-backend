@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "orders",
+  "info": {
+    "singularName": "order",
+    "pluralName": "orders",
+    "displayName": "Order",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "tg_user_id": {
+      "type": "string",
+      "required": true
+    },
+    "order_number": {
+      "type": "uid"
+    },
+    "comment": {
+      "type": "richtext"
+    },
+    "products": {
+      "type": "json"
+    },
+    "last_name": {
+      "type": "string"
+    },
+    "first_name": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    }
+  }
+}
