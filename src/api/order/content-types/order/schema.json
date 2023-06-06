@@ -33,6 +33,22 @@
     },
     "phone_number": {
       "type": "string"
+    },
+    "state": {
+      "type": "enumeration",
+      "enum": [
+        "WAITING",
+        "DONE",
+        "DECLINED"
+      ],
+      "default": "WAITING"
+    },
+    "order": {
+      "type": "customField",
+      "options": {
+        "pattern": "datetime"
+      },
+      "customField": "plugin::slug.slug"
     }
   }
 }
