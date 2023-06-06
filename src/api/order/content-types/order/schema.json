@@ -12,10 +12,6 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "tg_user_id": {
-      "type": "string",
-      "required": true
-    },
     "order_number": {
       "type": "uid"
     },
@@ -49,6 +45,9 @@
         "pattern": "datetime"
       },
       "customField": "plugin::slug.slug"
+    },
+    "tg_user_is": {
+      "type": "biginteger"
     }
   }
 }
